@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import {Outlet} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+import Header from "./components/Header";
+import SideMenu from "./components/SideMenu";
+class App extends Component {
+  constructor (props){
+    super(props);
+    this.state = {openMenu:false}
+  }
+  render () {
+    const {openMenu} = this.state;
+    return (
+      <div className="App">
+        <Header isSideMenu={this.state.openMenu} open={()=>{
+          this.setState({openMenu:!openMenu})
+        }}/>
+        <SideMenu isSideMenu={this.state.openMenu}/>
+        <div className="outlet" style={{left:openMenu?'280px':'60px'}}>
+          <Outlet />
+        </div>
+        
+      </div>
+    )
+  }
 }
+
 
 export default App;
