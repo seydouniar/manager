@@ -9,39 +9,39 @@ const data = [
   {
     id:1,
     icon:<BsCurrencyDollar />,
-    text: "Chiffre d'affaire",
+    text: "Ps Chiffre d'affaire",
     link:"psca",
     sub:[
       {
         id:1,
         icon:<BsCurrencyDollar />,
         text: "Chiffre	d’affaire	par	mois",
-        link:"psca"
+        link:"/psca/mois"
       },
       {
         id:2,
         icon:<BsCurrencyDollar />,
         text: "Chiffre	d’affaire	par	client",
-        link:"psca"
+        link:"/psca/client"
       },
       {
         id:3,
         icon:<BsCurrencyDollar />,
         text: "Chiffre	d’affaire	par	zone	géographique",
-        link:"psca"
+        link:"/psca/zone"
       },
       {
         id:4,
         icon:<BsCurrencyDollar />,
         text: "Chiffre	d’affaire	moyenne	mensuel	par	an",
-        link:"psca"
+        link:"/psca/annee"
       }
   ]
   },
   {
     id:2,
     icon:<BsWalletFill />,
-    text: "Chiffre d'affaire",
+    text: "Ressources humaines",
     link:"psrh",
     sub:[
       {
