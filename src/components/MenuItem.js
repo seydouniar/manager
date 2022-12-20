@@ -1,18 +1,14 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import Collapsible from "react-collapsible"
 
 const MenuItem = ({data,isShow})=>{
     return data.map((item,i)=>{
             return(
-                isShow?<div key={item.id}>
-                <div className="menuItem" >
-                    <Link className="links"
-                         to={item.link}>
-                        {item.icon} {item.text}
-                    </Link>
-                </div>
+                isShow?<Collapsible key={item.id} trigger={item.text} className="menuItem">
+                
                 <SubItems sub={item.sub} />
-                </div>
+                </Collapsible>
                 :
                 <div key={item.id} className="onlyIcon">
                     <Link className="links" to={item.link}>{item.icon}</Link>

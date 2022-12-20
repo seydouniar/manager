@@ -41,25 +41,25 @@ const data = [
   {
     id:2,
     icon:<BsWalletFill />,
-    text: "Chiffre d'affaire",
+    text: "Ressources humaines",
     link:"psrh",
     sub:[
       {
         id:1,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre d'affaire",
+        text: "Liste	des	recrutements	par	mois",
         link:"psca"
       },
       {
         id:2,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre d'affaire",
+        text: "Liste	des	départs par	mois",
         link:"psca"
       },
       {
         id:3,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre d'affaire",
+        text: "Liste	des	collaborateurs	présents",
         link:"psca"
       },
       {

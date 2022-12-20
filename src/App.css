@@ -51,7 +51,7 @@ body {
   height: 100%;
   width: 280px;
   position: fixed;
-  background: rgb(249, 249, 249);
+  background: rgb(182, 223, 248);
   transition: all 0.35s ease-out;
 }
 
