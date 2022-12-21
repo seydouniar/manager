@@ -69,11 +69,11 @@ body {
 .menuItem{
   display: flex;
   font-size: 1em;
-  justify-content: space-around;  
+  justify-content: center;  
+  align-items: center;
   font-weight: 600;
   color:rgba(0, 0, 0, 1);
   padding: 1rem 1.6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .onlyIcon {
@@ -102,11 +102,21 @@ body {
 
 .linkSub{
   color: black;
+  font-size: 1.2em;
   text-decoration: none;
-  justify-content: center;
-  align-content: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.linkSub:hover {
+  color: rgb(231, 229, 237);
 }
 .menuItem:hover {
   color: rgb(231, 229, 237);
+}
+
+.barAnnee {
+  width: 50%;
+  height: 300px;
+  border: 1px solid black;
 }

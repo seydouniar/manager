@@ -15,26 +15,26 @@ const data = [
       {
         id:1,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre	d’affaire	par	mois",
-        link:"psca"
+        text: "Par	mois",
+        link:"/psca/mois"
       },
       {
         id:2,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre	d’affaire	par	client",
-        link:"psca"
+        text: "Par	client",
+        link:"/psca/client"
       },
       {
         id:3,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre	d’affaire	par	zone	géographique",
-        link:"psca"
+        text: "Par	zone	géographique",
+        link:"/psca/zone"
       },
       {
         id:4,
         icon:<BsCurrencyDollar />,
-        text: "Chiffre	d’affaire	moyenne	mensuel	par	an",
-        link:"psca"
+        text: "Moyenne	mensuel	par	an",
+        link:"/psca/annee"
       }
   ]
   },
